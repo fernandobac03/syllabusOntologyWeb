@@ -1,0 +1,1246 @@
+@prefix : <http://ies.linkeddata.ec/syllabusOntology/vocabulary#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ies.linkeddata.ec/syllabusOntology/vocabulary> .
+
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> rdf:type owl:Ontology ;
+                                                        owl:versionIRI <http://ies.linkeddata.ec/syllabusOntology/vocabulary/1.1> ;
+                                                        owl:imports <http://purl.org/vocab/aiiso/schema#> ;
+                                                        <http://purl.org/dc/elements/1.1/contributor> "Computer Science Department - UCUENCA"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2018-09-15"@es ;
+                                                        <http://purl.org/dc/elements/1.1/description> "\"The Syllabus Ontology\" is an ontology that allows to represent information of academic content of Higher Education Institutions (HEI) of Ecuador."@en ,
+                                                                                                      "La Ontología de Sílabos es una ontología que permite representar  información de contenidos académicos de carrera (Sílabos) de Instituciones de Educación Superior (IES) del Ecuador."@es ;
+                                                        <http://purl.org/dc/elements/1.1/identifier> "http://purl.org/vocab/aiiso/schema-20080925"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/rights> "Copyright © 2008 Talis Information Ltd"^^xsd:string ;
+                                                        <http://purl.org/dc/elements/1.1/title> "Ontología de Sílabos"@es ,
+                                                                                                "The Syllabus Ontology"@en ;
+                                                        <http://purl.org/dc/terms/creator> "Computer Science Department - University of Cuenca"@en ,
+                                                                                           "Departamento de Ciencias de la Computación - Universidad de Cuenca"@es ;
+                                                        <http://purl.org/dc/terms/hasFormat> <http://purl.org/vocab/aiiso/schema-20080925.html> ,
+                                                                                             <http://purl.org/vocab/aiiso/schema-20080925.rdf> ;
+                                                        <http://purl.org/dc/terms/isVersionOf> <http://purl.org/vocab/aiiso/schema#> ;
+                                                        <http://purl.org/dc/terms/issued> "2018-09-15"^^xsd:string ;
+                                                        <http://purl.org/dc/terms/license> <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+                                                        rdfs:comment """
+			The Academic Institution Internal Structure Ontology (AIISO) provides classes and properties to describe the internal organizational structure of an academic institution. AIISO is designed to work in partnership with Participation (http://purl.org/vocab/participation/schema), FOAF (http://xmlns.com/foaf/0.1/) and aiiso-roles (http://purl.org/vocab/aiiso-roles/schema) to describe the roles that people play within an institution.
+    	"""@en ;
+                                                        owl:versionInfo "1.1"@es ;
+                                                        <https://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/format
+<http://purl.org/dc/elements/1.1/format> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/LicenseDocument
+<http://purl.org/dc/terms/LicenseDocument> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:domain <http://purl.org/ontology/bibo/Document> .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/aiiso/schema#name
+<http://purl.org/vocab/aiiso/schema#name> rdf:type owl:AnnotationProperty ;
+                                          rdfs:subPropertyOf rdfs:Label ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:domain _:genid262 ,
+                                                      _:genid58 .
+
+
+###  http://web.resource.org/cc/license
+<http://web.resource.org/cc/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://web.resource.org/cc/permits
+<http://web.resource.org/cc/permits> rdf:type owl:AnnotationProperty .
+
+
+###  http://web.resource.org/cc/requires
+<http://web.resource.org/cc/requires> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Label
+rdfs:Label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  https://creativecommons.org/ns#license
+<https://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada
+:conformada rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://purl.org/vocab/aiiso/schema#College>
+                                        <http://purl.org/vocab/aiiso/schema#Faculty>
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://purl.org/vocab/aiiso/schema#Faculty>
+                                       <http://purl.org/vocab/aiiso/schema#School>
+                                     )
+                       ] ;
+            rdfs:comment "Indica que una Universidad está conformada por cierta Facultad y que una Facultad está conformada por cierta Carrera."@es ;
+            rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+            rdfs:label "conformada_por"@es ,
+                       "formed_by"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia
+:estrategia rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://purl.org/spar/doco/Chapter> ;
+            rdfs:range :Learning_Strategy ;
+            rdfs:comment "Enlaza una estrategia de aprendizaje con un capítulo del contenido académico."@es ;
+            rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+            rdfs:label "estrategia_de_aprendizaje"@es ,
+                       "learning_strategy"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content
+:has_academic_content rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :is_academic_content_of ;
+                      rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                      rdfs:range :Academic_Content .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit
+:has_academic_unit rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :is_academic_unit_of ;
+                   rdfs:domain <http://purl.org/vocab/aiiso/schema#Institution> ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( <http://purl.org/vocab/aiiso/schema#Department>
+                                              <http://purl.org/vocab/aiiso/schema#Faculty>
+                                              <http://purl.org/vocab/aiiso/schema#School>
+                                            )
+                              ] .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography
+:has_bibliography rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :is_bibliography_of ;
+                  rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                  rdfs:range <http://purl.org/ontology/bibo/Document> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter
+:has_chapter rdf:type owl:ObjectProperty ;
+             owl:inverseOf :is_chapter_of ;
+             rdfs:domain :Academic_Content ;
+             rdfs:range <http://purl.org/spar/doco/Chapter> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation
+:has_evaluation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Learning_Achievement ;
+                rdfs:range :Evaluation_Mode .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_hei
+:has_hei rdf:type owl:ObjectProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator
+:has_indicator rdf:type owl:ObjectProperty ;
+               rdfs:domain :Learning_Achievement ;
+               rdfs:range :Indicator .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item
+:has_item rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_item_of ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Objective
+                                      :Results
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Objective
+                                     :Results
+                                   )
+                     ] .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective
+:has_objective rdf:type owl:ObjectProperty ;
+               owl:inverseOf :is_objective_of ;
+               rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+               rdfs:range :Objective .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result
+:has_result rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_result_of ;
+            rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+            rdfs:range :Results .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource
+:has_similar_resource rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :is_similar_resource_of ;
+                      rdfs:domain :Similarity ;
+                      rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity
+:has_similarity rdf:type owl:ObjectProperty ;
+                owl:inverseOf :is_similarity_of ;
+                rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                rdfs:range :Similarity .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter
+:has_subchapter rdf:type owl:ObjectProperty ;
+                owl:inverseOf :is_subchapter_of ;
+                rdfs:domain <http://purl.org/spar/doco/Chapter> ;
+                rdfs:range <http://purl.org/spar/doco/Section> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus
+:has_syllabus rdf:type owl:ObjectProperty ;
+              owl:inverseOf :is_syllabus_of ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://purl.org/vocab/aiiso/schema#Department>
+                                          <http://purl.org/vocab/aiiso/schema#Faculty>
+                                          <http://purl.org/vocab/aiiso/schema#Institute>
+                                          <http://purl.org/vocab/aiiso/schema#Institution>
+                                          <http://purl.org/vocab/aiiso/schema#School>
+                                        )
+                          ] ;
+              rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of
+:is_academic_content_of rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Academic_Content ;
+                        rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of
+:is_academic_unit_of rdf:type owl:ObjectProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( <http://purl.org/vocab/aiiso/schema#Department>
+                                                 <http://purl.org/vocab/aiiso/schema#Faculty>
+                                                 <http://purl.org/vocab/aiiso/schema#School>
+                                               )
+                                 ] ;
+                     rdfs:range <http://purl.org/vocab/aiiso/schema#Institution> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of
+:is_bibliography_of rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                    rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of
+:is_chapter_of rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://purl.org/spar/doco/Chapter> ;
+               rdfs:range :Academic_Content .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of
+:is_item_of rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Objective
+                                        :Results
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Objective
+                                       :Results
+                                     )
+                       ] .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of
+:is_objective_of rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Objective ;
+                 rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of
+:is_result_of rdf:type owl:ObjectProperty ;
+              rdfs:domain :Results ;
+              rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of
+:is_similar_resource_of rdf:type owl:ObjectProperty ;
+                        rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                        rdfs:range :Similarity .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of
+:is_similarity_of rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Similarity ;
+                  rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of
+:is_subchapter_of rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://purl.org/spar/doco/Section> ;
+                  rdfs:range <http://purl.org/spar/doco/Chapter> .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of
+:is_syllabus_of rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://purl.org/vocab/aiiso/schema#Department>
+                                           <http://purl.org/vocab/aiiso/schema#Faculty>
+                                           <http://purl.org/vocab/aiiso/schema#Institute>
+                                           <http://purl.org/vocab/aiiso/schema#Institution>
+                                           <http://purl.org/vocab/aiiso/schema#School>
+                                         )
+                           ] .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by
+:is_taught_by rdf:type owl:ObjectProperty ;
+              owl:inverseOf <http://purl.org/vocab/aiiso/schema#teaches> ;
+              rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+              rdfs:range [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://xmlns.com/foaf/0.1/Organization>
+                                         <http://xmlns.com/foaf/0.1/Person>
+                                       )
+                         ] .
+
+
+###  http://purl.org/vocab/aiiso/schema#knowledgeGrouping
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                     owl:unionOf ( <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping>
+                                                                                   <http://xmlns.com/foaf/0.1/Organization>
+                                                                                 )
+                                                                   ] ;
+                                                       rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                                                       <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                       rdfs:comment "A KnowledgeGrouping may be contained by another KnowledgeGrouping or an organizationalUnit using knowledgeGrouping."^^xsd:string ;
+                                                       rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                       rdfs:label "knowledgeGrouping"@en ;
+                                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Deprecated"^^xsd:string ;
+                                                       <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#organization
+<http://purl.org/vocab/aiiso/schema#organization> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+                                                  rdfs:range <http://xmlns.com/foaf/0.1/Organization> ;
+                                                  <http://purl.org/dc/terms/issued> "2008-09-25"^^xsd:string ;
+                                                  rdfs:comment "A foaf Organization may contain other subsidiary Organizations using organization."^^xsd:string ;
+                                                  rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                  rdfs:label "organization"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#organizationalUnit
+<http://purl.org/vocab/aiiso/schema#organizationalUnit> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+                                                        rdfs:range <http://xmlns.com/foaf/0.1/Organization> .
+
+
+###  http://purl.org/vocab/aiiso/schema#part_of
+<http://purl.org/vocab/aiiso/schema#part_of> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ,
+                                                         [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <http://purl.org/spar/doco/Section>
+                                                                         <http://purl.org/vocab/aiiso/schema#Faculty>
+                                                                         <http://purl.org/vocab/aiiso/schema#School>
+                                                                       )
+                                                         ] ;
+                                             rdfs:range <http://xmlns.com/foaf/0.1/Organization> ,
+                                                        [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <http://purl.org/spar/doco/Chapter>
+                                                                        <http://purl.org/vocab/aiiso/schema#College>
+                                                                        <http://purl.org/vocab/aiiso/schema#Faculty>
+                                                                      )
+                                                        ] ;
+                                             <http://purl.org/dc/terms/issued> "2008-09-25"^^xsd:string ;
+                                             rdfs:comment "Indica que una Facultad es parte de cierta Universidad y que una Carrera es parte de cierta Facultad."@es ,
+                                                          "A foaf Organization may refer to its parent Organizations using part_of."^^xsd:string ;
+                                             rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                             rdfs:label "part of"@en ,
+                                                        "parte_de"@es ;
+                                             <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#responsibilityOf
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> rdf:type owl:ObjectProperty ;
+                                                      owl:inverseOf <http://purl.org/vocab/aiiso/schema#responsibleFor> ;
+                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping>
+                                                                                  <http://xmlns.com/foaf/0.1/Organization>
+                                                                                )
+                                                                  ] ;
+                                                      rdfs:range [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( :Coordinador
+                                                                                 :Profesor
+                                                                               )
+                                                                 ] ;
+                                                      <http://purl.org/dc/terms/issued> "2008-05-20"^^xsd:string ;
+                                                      rdfs:comment "Indica una asignatura que es responsabilidad de una persona."@es ;
+                                                      rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                      rdfs:label "responsabilidad_de"@es ,
+                                                                 "responsibility of"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#responsibleFor
+<http://purl.org/vocab/aiiso/schema#responsibleFor> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( :Coordinador
+                                                                                :Profesor
+                                                                              )
+                                                                ] ;
+                                                    rdfs:range [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping>
+                                                                               <http://xmlns.com/foaf/0.1/Organization>
+                                                                             )
+                                                               ] ;
+                                                    <http://purl.org/dc/terms/issued> "2008-09-25"^^xsd:string ;
+                                                    rdfs:comment "Indica la persona que tiene como responsabilidad enseñar una asignatura."@es ;
+                                                    rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                    rdfs:label "responsabilidad_para"@es ,
+                                                               "responsible for"@en ,
+                                                               "responsible_for"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#teaches
+<http://purl.org/vocab/aiiso/schema#teaches> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain [ rdf:type owl:Class ;
+                                                           owl:unionOf ( :Profesor
+                                                                         <http://xmlns.com/foaf/0.1/Organization>
+                                                                       )
+                                                         ] ;
+                                             rdfs:range <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+                                             <http://purl.org/dc/terms/issued> "2008-09-25"^^xsd:string ;
+                                             rdfs:comment "An organization may specify the Knowledge Groupings that it teaches using this property."^^xsd:string ;
+                                             rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                             rdfs:label "enseña"@es ,
+                                                        "teaches"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#academic_unit_type
+:academic_unit_type rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad
+:ciudad rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :propiedadesOrganizacion ;
+        rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Indica la ciudad donde reside una Organización."@es ;
+        rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+        rdfs:label "city"@en ,
+                   "ciudad"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#credits
+:credits rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios
+:criterios rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Indica la descripción de los criterios para la acreditación de la asignatura, pueden ser una prueba, examen o trabajo con su respectiva puntuación sobre la nota total de 100."@es ;
+           rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+           rdfs:label "criteria"@en ,
+                      "criterios"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#date
+:date rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_creation
+:date_creation rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_end
+:date_end rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_start
+:date_start rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_update
+:date_update rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion
+:denominacion rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Es el nombre de la asignatura."@es ;
+              rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+              rdfs:label "denominación"@es ,
+                         "denomination"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :propiedadesPersona ;
+       rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Indica el correo electrónico de una persona."@es ;
+       rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+       rdfs:label "correo_electrónico"@es ,
+                  "email"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#hours
+:hours rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( <http://purl.org/spar/doco/Chapter>
+                                    <http://purl.org/spar/doco/Section>
+                                  )
+                    ] ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Es el número que se asigna a cada título o tema de forma ordenada."@es ;
+        rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+        rdfs:label "número_de_sección"@es ,
+                   "section_number"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais
+:pais rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :propiedadesOrganizacion ;
+      rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Indica el país donde reside una Organización."@es ;
+      rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+      rdfs:label "country"@en ,
+                 "pais"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#period_name
+:period_name rdf:type owl:DatatypeProperty .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion
+:propiedadesOrganizacion rdf:type owl:DatatypeProperty ;
+                         rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Agrupa todas las propiedades de datos correspondientes a la clase Organización."@es ;
+                         rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                         rdfs:label "organization_properties"@en ,
+                                    "propiedades_de_la_organización"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona
+:propiedadesPersona rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Agrupa todas las propiedades de datos correspondientes a la clase Persona."@es ;
+                    rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                    rdfs:label "person_properties"@en ,
+                               "propiedades_de_la_persona"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica
+:referenciabibliografica rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                         rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Es un texto con la referencia completa."@es ;
+                         rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                         rdfs:label "citation"@en ,
+                                    "referencia_bibliográfica"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value
+:similar_value rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Similarity ;
+               rdfs:range xsd:string .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name
+:subject_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
+              rdfs:range xsd:string .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo
+:titulo rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( <http://purl.org/spar/doco/Chapter>
+                                    <http://purl.org/spar/doco/Section>
+                                  )
+                    ] ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Es el título de un capítulo o subcapitulo del contenido."@es ;
+        rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+        rdfs:label "title"@en ,
+                   "título"@es .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf <http://purl.org/dc/terms/date> ;
+                                   rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Describe la fecha de creación de una obra literaria."@es ;
+                                   rdfs:label "created"@en ,
+                                              "fecha_de_creación"@es ;
+                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe the creation date of a bibliographic item"@en .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                                rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "Agrupa los tipos de fecha de creación o emisión de una obra literaria."@es ,
+                                             "Use to link a bibliographic item to the date of an event. Check dcterms:created and other for proper specializations for this property"@en ;
+                                rdfs:label "date"@en ,
+                                           "fecha"@es .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
+
+
+###  http://purl.org/ontology/bibo/chapter
+<http://purl.org/ontology/bibo/chapter> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "An chapter number"@en ,
+                                                     "Es el valor numérico que describe un capítulo dentro de una obra literaria."@es ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "chapter"@en ,
+                                                   "número_de_capítulo"@es .
+
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> ;
+                                    rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "EL identificador de objeto digital permite localizar un artículo a través de la red."@es ;
+                                    rdfs:isDefinedBy <http://purl.org/ontology/bibo/> ;
+                                    rdfs:label "doi"@en .
+
+
+###  http://purl.org/ontology/bibo/edition
+<http://purl.org/ontology/bibo/edition> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:range xsd:short ;
+                                        rdfs:comment "Es un valor alfanumérico que describe la edición de la obra literaria."@es ,
+                                                     "The name defining a special edition of a document. Normally its a literal value composed of a version number and words."@en ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "edición"@es ,
+                                                   "edition"@en .
+
+
+###  http://purl.org/ontology/bibo/identifier
+<http://purl.org/ontology/bibo/identifier> rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                                           rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/terms/creator> <http://purl.org/ontology/bibo/> ;
+                                           rdfs:comment "Agrupa los diferentes tipos de identificadores de obras literarias."@es ;
+                                           rdfs:label "identificador"@es ,
+                                                      "identifier"@en .
+
+
+###  http://purl.org/ontology/bibo/isbn
+<http://purl.org/ontology/bibo/isbn> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> ;
+                                     rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "El International Standard Book Number es un valor numérico para identificar libros."@es ;
+                                     rdfs:isDefinedBy <http://purl.org/ontology/bibo/> ;
+                                     rdfs:label "isbn"@en .
+
+
+###  http://purl.org/ontology/bibo/issn
+<http://purl.org/ontology/bibo/issn> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> ;
+                                     rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "El International Standard Serial Number es un valor numérico para identificar una colección de obras literarias."@es ;
+                                     rdfs:isDefinedBy <http://purl.org/ontology/bibo/> ;
+                                     rdfs:label "issn"@en .
+
+
+###  http://purl.org/ontology/bibo/locator
+<http://purl.org/ontology/bibo/locator> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "A description (often numeric) that locates an item within a containing document or collection."@en ,
+                                                     "Agrupa las diferentes formas de ubicar una parte determinada dentro de una obra literaria."@es ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "localizador"@es ,
+                                                   "locator"@en .
+
+
+###  http://purl.org/ontology/bibo/pageEnd
+<http://purl.org/ontology/bibo/pageEnd> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:range xsd:short ;
+                                        rdfs:comment "Ending page number within a continuous page range."@en ,
+                                                     "Es el valor numérico que describe la página de fin de un rango."@es ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "page_end"@en ,
+                                                   "pagina_de_fin"@es .
+
+
+###  http://purl.org/ontology/bibo/pageStart
+<http://purl.org/ontology/bibo/pageStart> rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                          rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                          rdfs:range xsd:short ;
+                                          rdfs:comment "Es el valor numérico que describe la página de inicio de un rango."@es ,
+                                                       "Starting page number within a continuous page range."@en ;
+                                          rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                          rdfs:label "page_start"@en ,
+                                                     "página_de_inicio"@es .
+
+
+###  http://purl.org/ontology/bibo/pages
+<http://purl.org/ontology/bibo/pages> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                      rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."@en ,
+                                                   "Es una cadena de caracteres que describe un rango de páginas no continuo."@es ;
+                                      rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                      rdfs:label "pages"@en ,
+                                                 "rango_de_páginas"@es .
+
+
+###  http://purl.org/ontology/bibo/propiedadesBibliografia
+<http://purl.org/ontology/bibo/propiedadesBibliografia> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                                        rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                     owl:unionOf ( xsd:short
+                                                                                   xsd:string
+                                                                                 )
+                                                                   ] ;
+                                                        rdfs:comment "Agrupa todas las propiedades de datos correspondientes a la clase Bibliografía."@es ;
+                                                        rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                                                        rdfs:label "bibliography_properties"@en ,
+                                                                   "propiedades_de_la_bibliografía"@es .
+
+
+###  http://purl.org/ontology/bibo/section
+<http://purl.org/ontology/bibo/section> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                        rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "A section number"@en ,
+                                                     "Es el valor numérico que describe una sección dentro de un capítulo en una obra literaria."@es ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "sección"@es ,
+                                                   "section"@en ;
+                                        <http://www.w3.org/2004/02/skos/core#example> """Di Rado, Alicia. 1995. Trekking through college: Classes explore
+modern society using the world of Star trek. Los Angeles Times, March
+15, sec. A, p. 3."""@en .
+
+
+###  http://purl.org/ontology/bibo/shortTitle
+<http://purl.org/ontology/bibo/shortTitle> rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf <http://purl.org/ontology/bibo/propiedadesBibliografia> ;
+                                           rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "Indica el nombre de una obra literaria."@es ,
+                                                        "The abbreviation of a title."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/ontology/bibo/> ;
+                                           rdfs:label "short_title"@en ,
+                                                      "título_de_la_obra"@es .
+
+
+###  http://purl.org/ontology/bibo/uri
+<http://purl.org/ontology/bibo/uri> rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/ontology/bibo/identifier> ;
+                                    rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "El identificador de recursos uniforme es una cadena de caracteres que permite identificar cualquier recursos en la red."@es ,
+                                                 "Universal Resource Identifier of a document"@en ;
+                                    rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                    rdfs:label "uri"@en .
+
+
+###  http://purl.org/ontology/bibo/volume
+<http://purl.org/ontology/bibo/volume> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf <http://purl.org/ontology/bibo/locator> ;
+                                       rdfs:domain <http://purl.org/ontology/bibo/Document> ;
+                                       rdfs:range xsd:short ;
+                                       rdfs:comment "A volume number"@en ,
+                                                    "Es el valor numérico el tomo o ejemplar de una obra literaria."@es ;
+                                       rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                       rdfs:label "volume"@en ,
+                                                  "volumen"@es .
+
+
+###  http://purl.org/vocab/aiiso/schema#code
+<http://purl.org/vocab/aiiso/schema#code> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping>
+                                                                      <http://xmlns.com/foaf/0.1/Organization>
+                                                                    )
+                                                      ] ;
+                                          rdfs:range xsd:int ,
+                                                     xsd:string ;
+                                          <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                          rdfs:comment "Es el valor numérico que identifica a la asignatura"@es ,
+                                                       "The code used by an Institution to refer to a KnowledgeGrouping or Organization."^^xsd:string ;
+                                          rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                          rdfs:label "code"@en ,
+                                                     "código"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#description
+<http://purl.org/vocab/aiiso/schema#description> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                               owl:unionOf ( <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping>
+                                                                             <http://xmlns.com/foaf/0.1/Organization>
+                                                                           )
+                                                             ] ;
+                                                 rdfs:range xsd:string ;
+                                                 <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                 rdfs:comment "Breve resumen de lo que trata la asignatura."@es ,
+                                                              "A Description of the KnowledgeGrouping or Organization."^^xsd:string ;
+                                                 rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                 rdfs:label "descripción"@es ,
+                                                            "description"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#name
+<http://purl.org/vocab/aiiso/schema#name> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> rdf:type owl:DatatypeProperty ;
+                                       owl:equivalentProperty <http://xmlns.com/foaf/0.1/lastName> ;
+                                       rdfs:subPropertyOf :propiedadesPersona ;
+                                       rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                       rdfs:range xsd:string ;
+                                       owl:propertyDisjointWith <http://xmlns.com/foaf/0.1/givenName> ;
+                                       rdfs:comment "Indica el apellido del autor de una obra literaria."@es ,
+                                                    "This is the property we choose to use to describe the family name of a person related to a bibliographic resource."@en ;
+                                       rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                       rdfs:label "apellido_autor"@es ,
+                                                  "familyName"@en .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdf:type owl:DatatypeProperty ;
+                                      owl:equivalentProperty <http://xmlns.com/foaf/0.1/givenName> ;
+                                      rdfs:subPropertyOf :propiedadesPersona ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                      rdfs:range xsd:string ;
+                                      owl:propertyDisjointWith <http://xmlns.com/foaf/0.1/lastName> ;
+                                      rdfs:comment "Indica los nombres de una persona."@es ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "first_name"@en ,
+                                                 "nombres"@es .
+
+
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :propiedadesPersona ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Indica el nombre del autor de una obra literaria."@es ,
+                                                   "This is the property we choose to describe the given name of a Person related to a bibliographic resource. This is the first name of a person."@en ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "Given_name"@en ,
+                                                 "nombre_autor"@es .
+
+
+###  http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :propiedadesPersona ;
+                                     rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "Indica los apellidos de una persona."@es ;
+                                     rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                     rdfs:label "apellidos"@es ,
+                                                "last_name"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content
+:Academic_Content rdf:type owl:Class ;
+                  rdfs:comment <http://linkeddata.ec/vsuc> ,
+                               "Describe un conjunto de capítulos y temas que debe el profesor debe impartir para cubrir la asignatura en su totalidad."@es ;
+                  rdfs:label "Academic_Content"@en ,
+                             "Contenido_Académico"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador
+:Coordinador rdf:type owl:Class ;
+             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+             rdfs:comment "Persona encargada de la asignatura."@es ;
+             rdfs:isDefinedBy "http://linkeddata.ec/vsuc"@es ;
+             rdfs:label "Coordinador"@es ,
+                        "Coordinator"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode
+:Evaluation_Mode rdf:type owl:Class ;
+                 rdfs:comment "Es la descripción de una actividad, tarea o instrumento que permite evaluar un logro de aprendizaje."@es ;
+                 rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                 rdfs:label "Evaluation_Mode"@en ,
+                            "Modo_de_Evaluación"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:comment "Es la descripción de una cualidad visible y medible que los estudiantes deben manifestar al alcanzar un logro de aprendizaje."@es ;
+           rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+           rdfs:label "Indicador"@es ,
+                      "Indicator"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement
+:Learning_Achievement rdf:type owl:Class ;
+                      rdfs:comment "Es la descripción de un logro de aprendizaje que los estudiantes deben alcanzar al terminar la asignatura."@es ;
+                      rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+                      rdfs:label "Learning_Achievement"@en ,
+                                 "Logro_de_Aprendizaje"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy
+:Learning_Strategy rdf:type owl:Class ;
+                   owl:disjointWith <http://purl.org/ontology/bibo/Document> ;
+                   rdfs:comment <http://linkeddata.ec/vsuc> ,
+                                "Es la descripción de una estrategia de aprendizaje que el profesor utiliza para enseñar un determinado capítulo."@es ;
+                   rdfs:label "Estrategia_de_Aprendizaje"@es ,
+                              "Learning_Strategy"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality
+:Modality rdf:type owl:Class ;
+          rdfs:comment "Indica la modalidad de enseñanza de la asignatura."@es ;
+          rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+          rdfs:label "Modalidad"@es ,
+                     "Modality"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective
+:Objective rdf:type owl:Class ;
+           rdfs:comment "Indica una meta que los estudiantes deben alcanzar al final de la asignatura."@es ;
+           rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+           rdfs:label "Objective"@en ,
+                      "Objetivo"@es .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor
+:Profesor rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+          rdfs:comment "Es la persona que imparte la asignatura."@es ;
+          rdfs:isDefinedBy "http://linkeddata.ec/vsuc"@es ;
+          rdfs:label "Profesor"@es ,
+                     "Professor"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource
+:Resource rdf:type owl:Class ;
+          owl:disjointWith <http://purl.org/ontology/bibo/Document> ;
+          rdfs:comment "Describe a un medio de aprendizaje material que el profesor utiliza para impartir la asignatura."@es ;
+          rdfs:isDefinedBy <http://linkeddata.ec/vsuc> ;
+          rdfs:label "Recurso"@es ,
+                     "Resource"@en .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results
+:Results rdf:type owl:Class .
+
+
+###  http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity
+:Similarity rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Document
+<http://purl.org/ontology/bibo/Document> rdf:type owl:Class ;
+                                         owl:disjointWith <http://purl.org/vocab/aiiso/schema#Course> ;
+                                         rdfs:comment "Es una referencia hacia una obra literaria de la cual se haya obtenido parte del contenido de la asignatura."@es ;
+                                         rdfs:isDefinedBy "http://purl.org/spar/doco"^^xsd:string ;
+                                         rdfs:label "Bibliografía"@es ,
+                                                    "Bibliography"@en .
+
+
+###  http://purl.org/spar/doco/Chapter
+<http://purl.org/spar/doco/Chapter> rdf:type owl:Class ;
+                                    rdfs:subClassOf :Academic_Content ;
+                                    owl:disjointWith <http://purl.org/spar/doco/Section> ;
+                                    rdfs:comment "Es el nombre de una determinada sección del contenido."@es ;
+                                    rdfs:isDefinedBy "http://purl.org/spar/doco"^^xsd:string ;
+                                    rdfs:label "Capítulo"@es ,
+                                               "Chapter"@en .
+
+
+###  http://purl.org/spar/doco/Section
+<http://purl.org/spar/doco/Section> rdf:type owl:Class ;
+                                    rdfs:subClassOf :Academic_Content ;
+                                    rdfs:comment "Es una parte de un capítulo que se debe enseñar a los estudiantes."@es ;
+                                    rdfs:isDefinedBy "http://purl.org/spar/doco"^^xsd:string ;
+                                    rdfs:label "Section"@en ,
+                                               "SubCapítulo"@es .
+
+
+###  http://purl.org/vocab/aiiso/schema#Center
+<http://purl.org/vocab/aiiso/schema#Center> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                            <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                            rdfs:comment "A Center is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a center."^^xsd:string ;
+                                            rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                            rdfs:label "Center"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#College
+<http://purl.org/vocab/aiiso/schema#College> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :conformada ;
+                                                                   owl:someValuesFrom <http://purl.org/vocab/aiiso/schema#Faculty>
+                                                                 ] ;
+                                             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                             owl:disjointWith <http://purl.org/vocab/aiiso/schema#Faculty> ,
+                                                              <http://purl.org/vocab/aiiso/schema#School> ;
+                                             <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                             rdfs:comment "Nombre de una institución universitaria."@es ,
+                                                          "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college."^^xsd:string ;
+                                             rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                             rdfs:label "College"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Course
+<http://purl.org/vocab/aiiso/schema#Course> rdf:type owl:Class ;
+                                            <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                            rdfs:comment "A Course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course."^^xsd:string ;
+                                            rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                            rdfs:label "Course"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Department
+<http://purl.org/vocab/aiiso/schema#Department> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                                <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                rdfs:comment "A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department."^^xsd:string ;
+                                                rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                rdfs:label "Department"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Division
+<http://purl.org/vocab/aiiso/schema#Division> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                              <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                              rdfs:comment "A Division is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a division."^^xsd:string ;
+                                              rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                              rdfs:label "Division"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Faculty
+<http://purl.org/vocab/aiiso/schema#Faculty> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :conformada ;
+                                                                   owl:someValuesFrom <http://purl.org/vocab/aiiso/schema#School>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.org/vocab/aiiso/schema#part_of> ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://purl.org/vocab/aiiso/schema#College>
+                                                                 ] ;
+                                             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                             owl:disjointWith <http://purl.org/vocab/aiiso/schema#School> ;
+                                             <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                             rdfs:comment "Nombre de la facultad a la que pertenece una carrera."@es ,
+                                                          "A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty."^^xsd:string ;
+                                             rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                             rdfs:label "Facultad"@es ,
+                                                        "Faculty"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Institute
+<http://purl.org/vocab/aiiso/schema#Institute> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                               <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                               rdfs:comment "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute."^^xsd:string ;
+                                               rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                               rdfs:label "Institute"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#Institution
+<http://purl.org/vocab/aiiso/schema#Institution> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                                 <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                 rdfs:comment "An Institution is the upper most level of an academic institution."^^xsd:string ;
+                                                 rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                 rdfs:label "Institution"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#KnowledgeGrouping
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> rdf:type owl:Class ;
+                                                       <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                       rdfs:comment "Describe un conjunto de recursos académicos como una asignatura, contenidos, período, objetivos, recursos, entre otros."@es ,
+                                                                    "A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials. The more specific subclasses of Subject, Programme, Course and Module are preferred."^^xsd:string ;
+                                                       rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                       rdfs:label "KnowledgeGrouping"@en ,
+                                                                  "Knowledge_Grouping"@en ,
+                                                                  "Programa_de_Estudios"@es ,
+                                                                  "Study_Program"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#historyNote> ""^^xsd:string .
+
+
+###  http://purl.org/vocab/aiiso/schema#ResearchGroup
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                                   <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                                   rdfs:comment "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group."^^xsd:string ;
+                                                   rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                                   rdfs:label "Research Group"@en .
+
+
+###  http://purl.org/vocab/aiiso/schema#School
+<http://purl.org/vocab/aiiso/schema#School> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://purl.org/vocab/aiiso/schema#part_of> ;
+                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onClass <http://purl.org/vocab/aiiso/schema#Faculty>
+                                                                ] ;
+                                            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+                                            <http://purl.org/dc/terms/issued> "2008-05-14"^^xsd:string ;
+                                            rdfs:comment "Nombre de la carrera en la que se dicta la asignatura."@es ,
+                                                         "A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school. This class refers schools within a higher education institution such as 'Harvard Law School' it does not refer to schools involved in earlier education."^^xsd:string ;
+                                            rdfs:isDefinedBy <http://purl.org/vocab/aiiso/schema#> ;
+                                            rdfs:label "Carrera"@es ,
+                                                       "School"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ;
+                                         rdfs:comment "Refiere a una institución educativo o editorial de libros"@es ,
+                                                      "An organization."^^xsd:string ;
+                                         rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                         rdfs:label "Organización"@es ,
+                                                    "Organization"^^xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:comment "Refiere a una persona que puede ser profesor, coordinador o autor de una obra literaria."@es ,
+                                                "A person."^^xsd:string ;
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                   rdfs:label "Persona"@es ,
+                                              "Person"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://creativecommons.org/licenses/by/2.0/uk/
+<http://creativecommons.org/licenses/by/2.0/uk/> rdf:type owl:NamedIndividual ;
+                                                 <http://web.resource.org/cc/permits> <http://web.resource.org/cc/DerivativeWorks> ,
+                                                                                      <http://web.resource.org/cc/Distribution> ,
+                                                                                      <http://web.resource.org/cc/Reproduction> ;
+                                                 <http://web.resource.org/cc/requires> <http://web.resource.org/cc/Attribution> ,
+                                                                                       <http://web.resource.org/cc/Notice> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<file:/home/ucuenca/CEPRA/NuestraONTO/schema-20080925.rdf> <http://web.resource.org/cc/license> <http://creativecommons.org/licenses/by/2.0/uk/> .
+
+
+<http://purl.org/dc/terms/issued> rdfs:comment "Describe la fecha de publicación de una obra literaria."@es ;
+                                  rdfs:label "fecha_de_publicación"@es ,
+                                             "issued"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe the issue date of a bibliographic resource"@en .
+
+
+<http://purl.org/vocab/aiiso/schema-20080925.html> <http://purl.org/dc/elements/1.1/format> _:genid87 .
+
+_:genid87 rdf:value "text/html"^^xsd:string ;
+           rdfs:label "HTML"@en .
+
+
+<http://purl.org/vocab/aiiso/schema-20080925.rdf> <http://purl.org/dc/elements/1.1/format> _:genid88 .
+
+_:genid88 rdf:value "application/rdf+xml"^^xsd:string ;
+           rdfs:label "RDF"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Evaluation_Mode
+                :Indicator
+                :Learning_Achievement
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

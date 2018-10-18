@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary/1.1> a prov:Entity;
+	 dc:title "The Syllabus Ontology";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Computer Science Department - University of Cuenca".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Departamento de Ciencias de la Computación - Universidad de Cuenca".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Computer Science Department - UCUENCA".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

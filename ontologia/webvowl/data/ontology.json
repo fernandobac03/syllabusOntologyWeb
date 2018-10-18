@@ -1,0 +1,3523 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://purl.org/vocab/aiiso/schema", "http://purl.org/spar/doco", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://ies.linkeddata.ec/syllabusOntology/vocabulary", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://purl.org/ontology/bibo" ],
+    "title" : {
+      "en" : "The Syllabus Ontology",
+      "es" : "Ontología de Sílabos"
+    },
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "version" : "1.1",
+    "author" : [ "Computer Science Department - University of Cuenca", "Departamento de Ciencias de la Computación - Universidad de Cuenca" ],
+    "description" : {
+      "en" : "\"The Syllabus Ontology\" is an ontology that allows to represent information of academic content of Higher Education Institutions (HEI) of Ecuador.",
+      "es" : "La Ontología de Sílabos es una ontología que permite representar  información de contenidos académicos de carrera (Sílabos) de Instituciones de Educación Superior (IES) del Ecuador."
+    },
+    "comments" : {
+      "en" : "\n\t\t\tThe Academic Institution Internal Structure Ontology (AIISO) provides classes and properties to describe the internal organizational structure of an academic institution. AIISO is designed to work in partnership with Participation (http://purl.org/vocab/participation/schema), FOAF (http://xmlns.com/foaf/0.1/) and aiiso-roles (http://purl.org/vocab/aiiso-roles/schema) to describe the roles that people play within an institution.\n    \t"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "es",
+        "value" : "2018-09-15",
+        "type" : "label"
+      } ],
+      "hasFormat" : [ {
+        "identifier" : "hasFormat",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema-20080925.html",
+        "type" : "iri"
+      }, {
+        "identifier" : "hasFormat",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema-20080925.rdf",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/",
+        "type" : "iri"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema-20080925",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "es",
+        "value" : "Departamento de Ciencias de la Computación - Universidad de Cuenca",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Computer Science Department - University of Cuenca",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Computer Science Department - UCUENCA",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright © 2008 Talis Information Ltd",
+        "type" : "label"
+      } ],
+      "isVersionOf" : [ {
+        "identifier" : "isVersionOf",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "es",
+        "value" : "1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Syllabus Ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontología de Sílabos",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-09-15",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 28,
+    "objectPropertyCount" : 35,
+    "datatypePropertyCount" : 47,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "120",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/ontology/bibo/Document",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/doco",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Bibliography",
+      "es" : "Bibliografía"
+    },
+    "comment" : {
+      "es" : "Es una referencia hacia una obra literaria de la cual se haya obtenido parte del contenido de la asignatura."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Institution",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Institution",
+      "en" : "Institution"
+    },
+    "comment" : {
+      "undefined" : "An Institution is the upper most level of an academic institution."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Modality",
+      "en" : "Modality",
+      "es" : "Modalidad"
+    },
+    "comment" : {
+      "es" : "Indica la modalidad de enseñanza de la asignatura."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Evaluation_Mode",
+      "en" : "Evaluation_Mode",
+      "es" : "Modo_de_Evaluación"
+    },
+    "comment" : {
+      "es" : "Es la descripción de una actividad, tarea o instrumento que permite evaluar un logro de aprendizaje."
+    },
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Course",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Course",
+      "en" : "Course"
+    },
+    "comment" : {
+      "undefined" : "A Course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#School",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "School",
+      "en" : "School",
+      "es" : "Carrera"
+    },
+    "comment" : {
+      "es" : "Nombre de la carrera en la que se dicta la asignatura.",
+      "undefined" : "A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school. This class refers schools within a higher education institution such as 'Harvard Law School' it does not refer to schools involved in earlier education."
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Learning_Strategy",
+      "en" : "Learning_Strategy",
+      "es" : "Estrategia_de_Aprendizaje"
+    },
+    "comment" : {
+      "es" : "Es la descripción de una estrategia de aprendizaje que el profesor utiliza para enseñar un determinado capítulo.",
+      "undefined" : "http://linkeddata.ec/vsuc"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Faculty",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Faculty",
+      "en" : "Faculty",
+      "es" : "Facultad"
+    },
+    "comment" : {
+      "es" : "Nombre de la facultad a la que pertenece una carrera.",
+      "undefined" : "A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Indicator",
+      "en" : "Indicator",
+      "es" : "Indicador"
+    },
+    "comment" : {
+      "es" : "Es la descripción de una cualidad visible y medible que los estudiantes deben manifestar al alcanzar un logro de aprendizaje."
+    },
+    "id" : "94"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Division",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Division",
+      "en" : "Division"
+    },
+    "comment" : {
+      "undefined" : "A Division is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a division."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/spar/doco/Chapter",
+    "baseIri" : "http://purl.org/spar/doco",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/doco",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Chapter",
+      "en" : "Chapter",
+      "es" : "Capítulo"
+    },
+    "comment" : {
+      "es" : "Es el nombre de una determinada sección del contenido."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Academic_Content",
+      "en" : "Academic_Content",
+      "es" : "Contenido_Académico"
+    },
+    "subClasses" : [ "14", "100" ],
+    "comment" : {
+      "es" : "Describe un conjunto de capítulos y temas que debe el profesor debe impartir para cubrir la asignatura en su totalidad.",
+      "undefined" : "http://linkeddata.ec/vsuc"
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#KnowledgeGrouping",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "KnowledgeGrouping",
+      "en" : "KnowledgeGrouping",
+      "es" : "Programa_de_Estudios"
+    },
+    "comment" : {
+      "es" : "Describe un conjunto de recursos académicos como una asignatura, contenidos, período, objetivos, recursos, entre otros.",
+      "undefined" : "A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials. The more specific subclasses of Subject, Programme, Course and Module are preferred."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Learning_Achievement",
+      "en" : "Learning_Achievement",
+      "es" : "Logro_de_Aprendizaje"
+    },
+    "comment" : {
+      "es" : "Es la descripción de un logro de aprendizaje que los estudiantes deben alcanzar al terminar la asignatura."
+    },
+    "id" : "104"
+  }, {
+    "iri" : "http://purl.org/spar/doco/Section",
+    "baseIri" : "http://purl.org/spar/doco",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/doco",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Section",
+      "en" : "Section",
+      "es" : "SubCapítulo"
+    },
+    "comment" : {
+      "es" : "Es una parte de un capítulo que se debe enseñar a los estudiantes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Center",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Center",
+      "en" : "Center"
+    },
+    "comment" : {
+      "undefined" : "A Center is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a center."
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#ResearchGroup",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ResearchGroup",
+      "en" : "Research Group"
+    },
+    "comment" : {
+      "undefined" : "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Results"
+    },
+    "id" : "59"
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "36" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "67"
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "36" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "112"
+  }, {
+    "instances" : 0,
+    "union" : [ "90", "100", "78" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "115"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "118"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "es" : "Organización",
+      "undefined" : "Organization"
+    },
+    "subClasses" : [ "124", "125", "90", "78", "105", "11", "109", "32", "30" ],
+    "comment" : {
+      "es" : "Refiere a una institución educativo o editorial de libros",
+      "undefined" : "An organization."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "90", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "126"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "59" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "127"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "59" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "128"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "24" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "129"
+  }, {
+    "instances" : 0,
+    "union" : [ "124", "125", "90", "78", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Department",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Department",
+      "en" : "Department"
+    },
+    "comment" : {
+      "undefined" : "A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department."
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "124", "125", "90", "78", "11" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "114"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "59" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "121"
+  }, {
+    "instances" : 0,
+    "union" : [ "125", "90", "78" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "133"
+  }, {
+    "instances" : 0,
+    "union" : [ "90", "78" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "138"
+  }, {
+    "instances" : 0,
+    "union" : [ "90", "32" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "137"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "59" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "120"
+  }, {
+    "instances" : 0,
+    "union" : [ "125", "90", "78" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "es" : "Persona",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "34", "36" ],
+    "comment" : {
+      "es" : "Refiere a una persona que puede ser profesor, coordinador o autor de una obra literaria.",
+      "undefined" : "A person."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#short",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "short"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "157",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "100" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "100" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#short",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "short"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resource",
+      "en" : "Resource",
+      "es" : "Recurso"
+    },
+    "comment" : {
+      "es" : "Describe a un medio de aprendizaje material que el profesor utiliza para impartir la asignatura."
+    },
+    "id" : "178"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "es",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Profesor",
+      "en" : "Professor",
+      "es" : "Profesor"
+    },
+    "comment" : {
+      "es" : "Es la persona que imparte la asignatura."
+    },
+    "id" : "34",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#College",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "College",
+      "en" : "College"
+    },
+    "comment" : {
+      "es" : "Nombre de una institución universitaria.",
+      "undefined" : "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#short",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "short"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#short",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "short"
+    }
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Similarity"
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Objective",
+      "en" : "Objective",
+      "es" : "Objetivo"
+    },
+    "comment" : {
+      "es" : "Indica una meta que los estudiantes deben alcanzar al final de la asignatura."
+    },
+    "id" : "21"
+  }, {
+    "instances" : 0,
+    "union" : [ "177", "175" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "155"
+  }, {
+    "instances" : 0,
+    "union" : [ "115", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "es",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Coordinador",
+      "en" : "Coordinator",
+      "es" : "Coordinador"
+    },
+    "comment" : {
+      "es" : "Persona encargada de la asignatura."
+    },
+    "id" : "36",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Institute",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Institute",
+      "en" : "Institute"
+    },
+    "comment" : {
+      "undefined" : "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute."
+    },
+    "attributes" : [ "external" ],
+    "id" : "124",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "126", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "197",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/vocab/aiiso/schema#organization",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-09-25",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "organization",
+      "en" : "organization"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A foaf Organization may contain other subsidiary Organizations using organization."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/dc/terms/date",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "date",
+      "es" : "fecha"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Use to link a bibliographic item to the date of an event. Check dcterms:created and other for proper specializations for this property",
+      "es" : "Agrupa los tipos de fecha de creación o emisión de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "denominacion",
+      "en" : "denomination",
+      "es" : "denominación"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Es el nombre de la asignatura."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#part_of",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-09-25",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "part_of",
+      "en" : "part of",
+      "es" : "parte_de"
+    },
+    "domain" : "9",
+    "comment" : {
+      "es" : "Indica que una Facultad es parte de cierta Universidad y que una Carrera es parte de cierta Facultad.",
+      "undefined" : "A foaf Organization may refer to its parent Organizations using part_of."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_hei",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "has_hei"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "estrategia",
+      "en" : "learning_strategy",
+      "es" : "estrategia_de_aprendizaje"
+    },
+    "domain" : "14",
+    "comment" : {
+      "es" : "Enlaza una estrategia de aprendizaje con un capítulo del contenido académico."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#description",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description",
+      "es" : "descripción"
+    },
+    "domain" : "18",
+    "comment" : {
+      "es" : "Breve resumen de lo que trata la asignatura.",
+      "undefined" : "A Description of the KnowledgeGrouping or Organization."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_objective_of"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "equivalent" : [ "26" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenName",
+      "en" : "Given_name",
+      "es" : "nombre_autor"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "This is the property we choose to describe the given name of a Person related to a bibliographic resource. This is the first name of a person.",
+      "es" : "Indica el nombre del autor de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/dc/terms/created",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "28",
+    "annotations" : {
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Used to describe the creation date of a bibliographic item",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "created",
+      "en" : "created",
+      "es" : "fecha_de_creación"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "Describe la fecha de creación de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "24",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "24",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity",
+    "inverse" : "39",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "has_similarity"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/chapter",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "chapter",
+      "en" : "chapter",
+      "es" : "número_de_capítulo"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "An chapter number",
+      "es" : "Es el valor numérico que describe un capítulo dentro de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/edition",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "edition",
+      "en" : "edition",
+      "es" : "edición"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The name defining a special edition of a document. Normally its a literal value composed of a version number and words.",
+      "es" : "Es un valor alfanumérico que describe la edición de la obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_creation",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "date_creation"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#email",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "email",
+      "es" : "correo_electrónico"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "Indica el correo electrónico de una persona."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "referenciabibliografica",
+      "en" : "citation",
+      "es" : "referencia_bibliográfica"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "Es un texto con la referencia completa."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/dc/terms/issued",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "54",
+    "annotations" : {
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Used to describe the issue date of a bibliographic resource",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "issued",
+      "en" : "issued",
+      "es" : "fecha_de_publicación"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Describe la fecha de publicación de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numero",
+      "en" : "section_number",
+      "es" : "número_de_sección"
+    },
+    "domain" : "56",
+    "comment" : {
+      "es" : "Es el número que se asigna a cada título o tema de forma ordenada."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result",
+    "inverse" : "60",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "has_result"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content",
+    "inverse" : "63",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "has_academic_content"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/shortTitle",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "shortTitle",
+      "en" : "short_title",
+      "es" : "título_de_la_obra"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The abbreviation of a title.",
+      "es" : "Indica el nombre de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#responsibleFor",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-09-25",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "responsibleFor",
+      "en" : "responsible for",
+      "es" : "responsabilidad_para"
+    },
+    "domain" : "67",
+    "comment" : {
+      "es" : "Indica la persona que tiene como responsabilidad enseñar una asignatura."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/uri",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "70",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "uri",
+      "en" : "uri"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Universal Resource Identifier of a document",
+      "es" : "El identificador de recursos uniforme es una cadena de caracteres que permite identificar cualquier recursos en la red."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/pages",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "72",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pages",
+      "en" : "pages",
+      "es" : "rango_de_páginas"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties.",
+      "es" : "Es una cadena de caracteres que describe un rango de páginas no continuo."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "74",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "propiedadesPersona",
+      "en" : "person_properties",
+      "es" : "propiedades_de_la_persona"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "Agrupa todas las propiedades de datos correspondientes a la clase Persona."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/propiedadesBibliografia",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "77",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "propiedadesBibliografia",
+      "en" : "bibliography_properties",
+      "es" : "propiedades_de_la_bibliografía"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "Agrupa todas las propiedades de datos correspondientes a la clase Bibliografía."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#name",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "82",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pais",
+      "en" : "country",
+      "es" : "pais"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Indica el país donde reside una Organización."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "is_syllabus_of"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "86",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "propiedadesOrganizacion",
+      "en" : "organization_properties",
+      "es" : "propiedades_de_la_organización"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Agrupa todas las propiedades de datos correspondientes a la clase Organización."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "equivalent" : [ "23" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "firstName",
+      "en" : "first_name",
+      "es" : "nombres"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "Indica los nombres de una persona."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#period_name",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "period_name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/familyName",
+    "equivalent" : [ "93" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "familyName",
+      "en" : "familyName",
+      "es" : "apellido_autor"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "This is the property we choose to use to describe the family name of a person related to a bibliographic resource.",
+      "es" : "Indica el apellido del autor de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_start",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "date_start"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/pageEnd",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "98",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pageEnd",
+      "en" : "page_end",
+      "es" : "pagina_de_fin"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Ending page number within a continuous page range.",
+      "es" : "Es el valor numérico que describe la página de fin de un rango."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter",
+    "inverse" : "101",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "has_subchapter"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "similar_value"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_bibliography_of"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource",
+    "inverse" : "108",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "has_similar_resource"
+    },
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#credits",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "credits"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus",
+    "inverse" : "83",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "has_syllabus"
+    },
+    "domain" : "114",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#academic_unit_type",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "academic_unit_type"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item",
+    "inverse" : "122",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "has_item"
+    },
+    "domain" : "120",
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#hours",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hours"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "is_academic_unit_of"
+    },
+    "domain" : "133",
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/pageStart",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "135",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pageStart",
+      "en" : "page_start",
+      "es" : "página_de_inicio"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Starting page number within a continuous page range.",
+      "es" : "Es el valor numérico que describe la página de inicio de un rango."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "138",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conformada",
+      "en" : "formed_by",
+      "es" : "conformada_por"
+    },
+    "domain" : "137",
+    "comment" : {
+      "es" : "Indica que una Universidad está conformada por cierta Facultad y que una Facultad está conformada por cierta Carrera."
+    },
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective",
+    "inverse" : "20",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "has_objective"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/lastName",
+    "equivalent" : [ "91" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "140",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lastName",
+      "en" : "last_name",
+      "es" : "apellidos"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "Indica los apellidos de una persona."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "has_evaluation"
+    },
+    "domain" : "104",
+    "attributes" : [ "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conformada",
+      "en" : "formed_by",
+      "es" : "conformada_por"
+    },
+    "domain" : "90",
+    "comment" : {
+      "es" : "Indica que una Universidad está conformada por cierta Facultad y que una Facultad está conformada por cierta Carrera."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#responsibilityOf",
+    "inverse" : "66",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "112",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "responsibilityOf",
+      "en" : "responsibility of",
+      "es" : "responsabilidad_de"
+    },
+    "domain" : "123",
+    "comment" : {
+      "es" : "Indica una asignatura que es responsabilidad de una persona."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "78",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#teaches",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-09-25",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "teaches",
+      "en" : "teaches",
+      "es" : "enseña"
+    },
+    "domain" : "150",
+    "comment" : {
+      "undefined" : "An organization may specify the Knowledge Groupings that it teaches using this property."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/isbn",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "147",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isbn",
+      "en" : "isbn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "El International Standard Book Number es un valor numérico para identificar libros."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#organizationalUnit",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "organizationalUnit"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#code",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "155",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "code",
+      "en" : "code",
+      "es" : "código"
+    },
+    "domain" : "154",
+    "comment" : {
+      "es" : "Es el valor numérico que identifica a la asignatura",
+      "undefined" : "The code used by an Institution to refer to a KnowledgeGrouping or Organization."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/issn",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "161",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "issn",
+      "en" : "issn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "El International Standard Serial Number es un valor numérico para identificar una colección de obras literarias."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "163",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ciudad",
+      "en" : "city",
+      "es" : "ciudad"
+    },
+    "domain" : "1",
+    "comment" : {
+      "es" : "Indica la ciudad donde reside una Organización."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by",
+    "inverse" : "149",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "is_taught_by"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/identifier",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "148",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier",
+      "es" : "identificador"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "Agrupa los diferentes tipos de identificadores de obras literarias."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit",
+    "inverse" : "132",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "has_academic_unit"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/doi",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "156",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "doi",
+      "en" : "doi"
+    },
+    "domain" : "2",
+    "comment" : {
+      "es" : "EL identificador de objeto digital permite localizar un artículo a través de la red."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "is_similar_resource_of"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/section",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "170",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Di Rado, Alicia. 1995. Trekking through college: Classes explore\nmodern society using the world of Star trek. Los Angeles Times, March\n15, sec. A, p. 3.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "section",
+      "en" : "section",
+      "es" : "sección"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A section number",
+      "es" : "Es el valor numérico que describe una sección dentro de un capítulo en una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "168",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "criterios",
+      "en" : "criteria",
+      "es" : "criterios"
+    },
+    "domain" : "6",
+    "comment" : {
+      "es" : "Indica la descripción de los criterios para la acreditación de la asignatura, pueden ser una prueba, examen o trabajo con su respectiva puntuación sobre la nota total de 100."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "158",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "titulo",
+      "en" : "title",
+      "es" : "título"
+    },
+    "domain" : "159",
+    "comment" : {
+      "es" : "Es el título de un capítulo o subcapitulo del contenido."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#knowledgeGrouping",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/aiiso/schema#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "Deprecated",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-14",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "knowledgeGrouping",
+      "en" : "knowledgeGrouping"
+    },
+    "domain" : "118",
+    "comment" : {
+      "undefined" : "A KnowledgeGrouping may be contained by another KnowledgeGrouping or an organizationalUnit using knowledgeGrouping."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "is_subchapter_of"
+    },
+    "domain" : "100",
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "subject_name"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "is_item_of"
+    },
+    "domain" : "128",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_end",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "180",
+    "label" : {
+      "IRI-based" : "date_end"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "is_chapter_of"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "182"
+  }, {
+    "range" : "1",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "1",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "1",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_academic_content_of"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "range" : "1",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "1",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "1",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "94",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "2",
+    "domain" : "178",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "75",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "100",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_result_of"
+    },
+    "domain" : "59",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://linkeddata.ec/vsuc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conformada",
+      "en" : "formed_by",
+      "es" : "conformada_por"
+    },
+    "domain" : "32",
+    "comment" : {
+      "es" : "Indica que una Universidad está conformada por cierta Facultad y que una Facultad está conformada por cierta Carrera."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_update",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "197",
+    "label" : {
+      "IRI-based" : "date_update"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "196"
+  }, {
+    "range" : "32",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "32",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter",
+    "inverse" : "182",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "has_chapter"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "has_indicator"
+    },
+    "domain" : "104",
+    "attributes" : [ "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography",
+    "inverse" : "106",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "has_bibliography"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_similarity_of"
+    },
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "94",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "104",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "62",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "62",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/volume",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "176",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "volume",
+      "en" : "volume",
+      "es" : "volumen"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A volume number",
+      "es" : "Es el valor numérico el tomo o ejemplar de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/locator",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "range" : "181",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/bibo/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "locator",
+      "en" : "locator",
+      "es" : "localizador"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A description (often numeric) that locates an item within a containing document or collection.",
+      "es" : "Agrupa las diferentes formas de ubicar una parte determinada dentro de una obra literaria."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary#date",
+    "baseIri" : "http://ies.linkeddata.ec/syllabusOntology/vocabulary",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "210"
+  } ]
+}

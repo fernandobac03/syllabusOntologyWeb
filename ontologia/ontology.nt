@@ -1,0 +1,1255 @@
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://www.w3.org/2002/07/owl#versionIRI> <http://ies.linkeddata.ec/syllabusOntology/vocabulary/1.1> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/aiiso/schema#> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/contributor> "Computer Science Department - UCUENCA" .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/date> "2018-09-15"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/description> "\"The Syllabus Ontology\" is an ontology that allows to represent information of academic content of Higher Education Institutions (HEI) of Ecuador."@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/description> "La Ontolog\u00EDa de S\u00EDlabos es una ontolog\u00EDa que permite representar  informaci\u00F3n de contenidos acad\u00E9micos de carrera (S\u00EDlabos) de Instituciones de Educaci\u00F3n Superior (IES) del Ecuador."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/identifier> "http://purl.org/vocab/aiiso/schema-20080925" .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/rights> "Copyright \u00A9 2008 Talis Information Ltd" .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/title> "Ontolog\u00EDa de S\u00EDlabos"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/elements/1.1/title> "The Syllabus Ontology"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/creator> "Computer Science Department - University of Cuenca"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/creator> "Departamento de Ciencias de la Computaci\u00F3n - Universidad de Cuenca"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/hasFormat> <http://purl.org/vocab/aiiso/schema-20080925.html> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/hasFormat> <http://purl.org/vocab/aiiso/schema-20080925.rdf> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/isVersionOf> <http://purl.org/vocab/aiiso/schema#> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/issued> "2018-09-15" .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://purl.org/dc/terms/license> <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t\t\tThe Academic Institution Internal Structure Ontology (AIISO) provides classes and properties to describe the internal organizational structure of an academic institution. AIISO is designed to work in partnership with Participation (http://purl.org/vocab/participation/schema), FOAF (http://xmlns.com/foaf/0.1/) and aiiso-roles (http://purl.org/vocab/aiiso-roles/schema) to describe the roles that people play within an institution.\n    \t"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary> <https://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/format
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/LicenseDocument
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/aiiso/schema#name
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#Label> .
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/2000/01/rdf-schema#domain> <_:genid262> .
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/2000/01/rdf-schema#domain> <_:genid58> .
+# 
+# http://web.resource.org/cc/license
+<http://web.resource.org/cc/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://web.resource.org/cc/permits
+<http://web.resource.org/cc/permits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://web.resource.org/cc/requires
+<http://web.resource.org/cc/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Label
+<http://www.w3.org/2000/01/rdf-schema#Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://creativecommons.org/ns#license
+<https://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#College> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que una Universidad est\u00E1 conformada por cierta Facultad y que una Facultad est\u00E1 conformada por cierta Carrera."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#label> "conformada_por"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> <http://www.w3.org/2000/01/rdf-schema#label> "formed_by"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Chapter> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlaza una estrategia de aprendizaje con un cap\u00EDtulo del contenido acad\u00E9mico."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#label> "estrategia_de_aprendizaje"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#estrategia> <http://www.w3.org/2000/01/rdf-schema#label> "learning_strategy"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_content> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#Institution> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_academic_unit> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Department> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_bibliography> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bibo/Document> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_chapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/doco/Chapter> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_evaluation> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_hei
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_hei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_indicator> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_item> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_objective> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_result> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similar_resource> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_similarity> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Chapter> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_subchapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/doco/Section> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus> <http://www.w3.org/2002/07/owl#inverseOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Department> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Institute> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Institution> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#has_syllabus> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_content_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Department> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_academic_unit_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#Institution> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_bibliography_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Chapter> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_chapter_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_item_of> <http://www.w3.org/2000/01/rdf-schema#range> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid30 <http://www.w3.org/2002/07/owl#unionOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_objective_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_result_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similar_resource_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_similarity_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/doco/Section> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_subchapter_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/doco/Chapter> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_syllabus_of> <http://www.w3.org/2000/01/rdf-schema#range> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Department> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Institute> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Institution> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/aiiso/schema#teaches> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#is_taught_by> <http://www.w3.org/2000/01/rdf-schema#range> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://purl.org/vocab/aiiso/schema#knowledgeGrouping
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/2002/07/owl#unionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#comment> "A KnowledgeGrouping may be contained by another KnowledgeGrouping or an organizationalUnit using knowledgeGrouping." .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#label> "knowledgeGrouping"@en .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "Deprecated" .
+<http://purl.org/vocab/aiiso/schema#knowledgeGrouping> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#organization
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#organization> <http://purl.org/dc/terms/issued> "2008-09-25" .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A foaf Organization may contain other subsidiary Organizations using organization." .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2000/01/rdf-schema#label> "organization"@en .
+<http://purl.org/vocab/aiiso/schema#organization> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#organizationalUnit
+<http://purl.org/vocab/aiiso/schema#organizationalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#organizationalUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#organizationalUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+# 
+# http://purl.org/vocab/aiiso/schema#part_of
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Section> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#School> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#range> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Chapter> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#College> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#Faculty> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://purl.org/dc/terms/issued> "2008-09-25" .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que una Facultad es parte de cierta Universidad y que una Carrera es parte de cierta Facultad."@es .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#comment> "A foaf Organization may refer to its parent Organizations using part_of." .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2000/01/rdf-schema#label> "parte_de"@es .
+<http://purl.org/vocab/aiiso/schema#part_of> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#responsibilityOf
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/aiiso/schema#responsibleFor> .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid53 <http://www.w3.org/2002/07/owl#unionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid56 <http://www.w3.org/2002/07/owl#unionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://purl.org/dc/terms/issued> "2008-05-20" .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una asignatura que es responsabilidad de una persona."@es .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "responsabilidad_de"@es .
+<http://purl.org/vocab/aiiso/schema#responsibilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "responsibility of"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#responsibleFor
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/2002/07/owl#unionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#range> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid62 <http://www.w3.org/2002/07/owl#unionOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://purl.org/dc/terms/issued> "2008-09-25" .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la persona que tiene como responsabilidad ense\u00F1ar una asignatura."@es .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#label> "responsabilidad_para"@es .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#label> "responsible for"@en .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2000/01/rdf-schema#label> "responsible_for"@en .
+<http://purl.org/vocab/aiiso/schema#responsibleFor> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#teaches
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid65 <http://www.w3.org/2002/07/owl#unionOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://purl.org/dc/terms/issued> "2008-09-25" .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization may specify the Knowledge Groupings that it teaches using this property." .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#label> "ense\u00F1a"@es .
+<http://purl.org/vocab/aiiso/schema#teaches> <http://www.w3.org/2000/01/rdf-schema#label> "teaches"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#academic_unit_type
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#academic_unit_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la ciudad donde reside una Organizaci\u00F3n."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#label> "city"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#ciudad> <http://www.w3.org/2000/01/rdf-schema#label> "ciudad"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#credits
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#credits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la descripci\u00F3n de los criterios para la acreditaci\u00F3n de la asignatura, pueden ser una prueba, examen o trabajo con su respectiva puntuaci\u00F3n sobre la nota total de 100."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/2000/01/rdf-schema#label> "criteria"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#criterios> <http://www.w3.org/2000/01/rdf-schema#label> "criterios"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#date
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_creation
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_end
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_start
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_update
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#date_update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el nombre de la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/2000/01/rdf-schema#label> "denominaci\u00F3n"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#denominacion> <http://www.w3.org/2000/01/rdf-schema#label> "denomination"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#email
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el correo electr\u00F3nico de una persona."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#label> "correo_electr\u00F3nico"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#hours
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#hours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid68 <http://www.w3.org/2002/07/owl#unionOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Chapter> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Section> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el n\u00FAmero que se asigna a cada t\u00EDtulo o tema de forma ordenada."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#label> "n\u00FAmero_de_secci\u00F3n"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#numero> <http://www.w3.org/2000/01/rdf-schema#label> "section_number"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el pa\u00EDs donde reside una Organizaci\u00F3n."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#pais> <http://www.w3.org/2000/01/rdf-schema#label> "pais"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#period_name
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#period_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa todas las propiedades de datos correspondientes a la clase Organizaci\u00F3n."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#label> "organization_properties"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesOrganizacion> <http://www.w3.org/2000/01/rdf-schema#label> "propiedades_de_la_organizaci\u00F3n"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa todas las propiedades de datos correspondientes a la clase Persona."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#label> "person_properties"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> <http://www.w3.org/2000/01/rdf-schema#label> "propiedades_de_la_persona"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#comment> "Es un texto con la referencia completa."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#label> "citation"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#referenciabibliografica> <http://www.w3.org/2000/01/rdf-schema#label> "referencia_bibliogr\u00E1fica"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#similar_value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#subject_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid71 <http://www.w3.org/2002/07/owl#unionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Chapter> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Section> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el t\u00EDtulo de un cap\u00EDtulo o subcapitulo del contenido."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#titulo> <http://www.w3.org/2000/01/rdf-schema#label> "t\u00EDtulo"@es .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe la fecha de creaci\u00F3n de una obra literaria."@es .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "created"@en .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#label> "fecha_de_creaci\u00F3n"@es .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe the creation date of a bibliographic item"@en .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa los tipos de fecha de creaci\u00F3n o emisi\u00F3n de una obra literaria."@es .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "Use to link a bibliographic item to the date of an event. Check dcterms:created and other for proper specializations for this property"@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "date"@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "fecha"@es .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+# 
+# http://purl.org/ontology/bibo/chapter
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "An chapter number"@en .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico que describe un cap\u00EDtulo dentro de una obra literaria."@es .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#label> "chapter"@en .
+<http://purl.org/ontology/bibo/chapter> <http://www.w3.org/2000/01/rdf-schema#label> "n\u00FAmero_de_cap\u00EDtulo"@es .
+# 
+# http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/identifier> .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#comment> "EL identificador de objeto digital permite localizar un art\u00EDculo a trav\u00E9s de la red."@es .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/bibo/> .
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/2000/01/rdf-schema#label> "doi"@en .
+# 
+# http://purl.org/ontology/bibo/edition
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#comment> "Es un valor alfanum\u00E9rico que describe la edici\u00F3n de la obra literaria."@es .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#comment> "The name defining a special edition of a document. Normally its a literal value composed of a version number and words."@en .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#label> "edici\u00F3n"@es .
+<http://purl.org/ontology/bibo/edition> <http://www.w3.org/2000/01/rdf-schema#label> "edition"@en .
+# 
+# http://purl.org/ontology/bibo/identifier
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/identifier> <http://purl.org/dc/terms/creator> <http://purl.org/ontology/bibo/> .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa los diferentes tipos de identificadores de obras literarias."@es .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador"@es .
+<http://purl.org/ontology/bibo/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://purl.org/ontology/bibo/isbn
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/identifier> .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#comment> "El International Standard Book Number es un valor num\u00E9rico para identificar libros."@es .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/bibo/> .
+<http://purl.org/ontology/bibo/isbn> <http://www.w3.org/2000/01/rdf-schema#label> "isbn"@en .
+# 
+# http://purl.org/ontology/bibo/issn
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/identifier> .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#comment> "El International Standard Serial Number es un valor num\u00E9rico para identificar una colecci\u00F3n de obras literarias."@es .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/bibo/> .
+<http://purl.org/ontology/bibo/issn> <http://www.w3.org/2000/01/rdf-schema#label> "issn"@en .
+# 
+# http://purl.org/ontology/bibo/locator
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#comment> "A description (often numeric) that locates an item within a containing document or collection."@en .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa las diferentes formas de ubicar una parte determinada dentro de una obra literaria."@es .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#label> "localizador"@es .
+<http://purl.org/ontology/bibo/locator> <http://www.w3.org/2000/01/rdf-schema#label> "locator"@en .
+# 
+# http://purl.org/ontology/bibo/pageEnd
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Ending page number within a continuous page range."@en .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico que describe la p\u00E1gina de fin de un rango."@es .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#label> "page_end"@en .
+<http://purl.org/ontology/bibo/pageEnd> <http://www.w3.org/2000/01/rdf-schema#label> "pagina_de_fin"@es .
+# 
+# http://purl.org/ontology/bibo/pageStart
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico que describe la p\u00E1gina de inicio de un rango."@es .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Starting page number within a continuous page range."@en .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#label> "page_start"@en .
+<http://purl.org/ontology/bibo/pageStart> <http://www.w3.org/2000/01/rdf-schema#label> "p\u00E1gina_de_inicio"@es .
+# 
+# http://purl.org/ontology/bibo/pages
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#comment> "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."@en .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#comment> "Es una cadena de caracteres que describe un rango de p\u00E1ginas no continuo."@es .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#label> "pages"@en .
+<http://purl.org/ontology/bibo/pages> <http://www.w3.org/2000/01/rdf-schema#label> "rango_de_p\u00E1ginas"@es .
+# 
+# http://purl.org/ontology/bibo/propiedadesBibliografia
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#range> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#short> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrupa todas las propiedades de datos correspondientes a la clase Bibliograf\u00EDa."@es .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#label> "bibliography_properties"@en .
+<http://purl.org/ontology/bibo/propiedadesBibliografia> <http://www.w3.org/2000/01/rdf-schema#label> "propiedades_de_la_bibliograf\u00EDa"@es .
+# 
+# http://purl.org/ontology/bibo/section
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#comment> "A section number"@en .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico que describe una secci\u00F3n dentro de un cap\u00EDtulo en una obra literaria."@es .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#label> "secci\u00F3n"@es .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2000/01/rdf-schema#label> "section"@en .
+<http://purl.org/ontology/bibo/section> <http://www.w3.org/2004/02/skos/core#example> "Di Rado, Alicia. 1995. Trekking through college: Classes explore\nmodern society using the world of Star trek. Los Angeles Times, March\n15, sec. A, p. 3."@en .
+# 
+# http://purl.org/ontology/bibo/shortTitle
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/propiedadesBibliografia> .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el nombre de una obra literaria."@es .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The abbreviation of a title."@en .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ontology/bibo/> .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#label> "short_title"@en .
+<http://purl.org/ontology/bibo/shortTitle> <http://www.w3.org/2000/01/rdf-schema#label> "t\u00EDtulo_de_la_obra"@es .
+# 
+# http://purl.org/ontology/bibo/uri
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/identifier> .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#comment> "El identificador de recursos uniforme es una cadena de caracteres que permite identificar cualquier recursos en la red."@es .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#comment> "Universal Resource Identifier of a document"@en .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/uri> <http://www.w3.org/2000/01/rdf-schema#label> "uri"@en .
+# 
+# http://purl.org/ontology/bibo/volume
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/bibo/locator> .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#short> .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#comment> "A volume number"@en .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico el tomo o ejemplar de una obra literaria."@es .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#label> "volume"@en .
+<http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#label> "volumen"@es .
+# 
+# http://purl.org/vocab/aiiso/schema#code
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid77 <http://www.w3.org/2002/07/owl#unionOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/aiiso/schema#code> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el valor num\u00E9rico que identifica a la asignatura"@es .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#comment> "The code used by an Institution to refer to a KnowledgeGrouping or Organization." .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#label> "code"@en .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo"@es .
+<http://purl.org/vocab/aiiso/schema#code> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#description
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid80 <http://www.w3.org/2002/07/owl#unionOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/aiiso/schema#description> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#comment> "Breve resumen de lo que trata la asignatura."@es .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#comment> "A Description of the KnowledgeGrouping or Organization." .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#label> "descripci\u00F3n"@es .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://purl.org/vocab/aiiso/schema#description> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#name
+<http://purl.org/vocab/aiiso/schema#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://xmlns.com/foaf/0.1/familyName
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://xmlns.com/foaf/0.1/lastName> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://xmlns.com/foaf/0.1/givenName> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el apellido del autor de una obra literaria."@es .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the property we choose to use to describe the family name of a person related to a bibliographic resource."@en .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#label> "apellido_autor"@es .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#label> "familyName"@en .
+# 
+# http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://xmlns.com/foaf/0.1/givenName> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://xmlns.com/foaf/0.1/lastName> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica los nombres de una persona."@es .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "first_name"@en .
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "nombres"@es .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el nombre del autor de una obra literaria."@es .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the property we choose to describe the given name of a Person related to a bibliographic resource. This is the first name of a person."@en .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "Given_name"@en .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "nombre_autor"@es .
+# 
+# http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#propiedadesPersona> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica los apellidos de una persona."@es .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "apellidos"@es .
+<http://xmlns.com/foaf/0.1/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "last_name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> <http://www.w3.org/2000/01/rdf-schema#comment> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe un conjunto de cap\u00EDtulos y temas que debe el profesor debe impartir para cubrir la asignatura en su totalidad."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> <http://www.w3.org/2000/01/rdf-schema#label> "Academic_Content"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> <http://www.w3.org/2000/01/rdf-schema#label> "Contenido_Acad\u00E9mico"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona encargada de la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://linkeddata.ec/vsuc"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinador"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinator"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la descripci\u00F3n de una actividad, tarea o instrumento que permite evaluar un logro de aprendizaje."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation_Mode"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> <http://www.w3.org/2000/01/rdf-schema#label> "Modo_de_Evaluaci\u00F3n"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la descripci\u00F3n de una cualidad visible y medible que los estudiantes deben manifestar al alcanzar un logro de aprendizaje."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicador"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la descripci\u00F3n de un logro de aprendizaje que los estudiantes deben alcanzar al terminar la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> <http://www.w3.org/2000/01/rdf-schema#label> "Learning_Achievement"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> <http://www.w3.org/2000/01/rdf-schema#label> "Logro_de_Aprendizaje"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/bibo/Document> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/2000/01/rdf-schema#comment> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la descripci\u00F3n de una estrategia de aprendizaje que el profesor utiliza para ense\u00F1ar un determinado cap\u00EDtulo."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/2000/01/rdf-schema#label> "Estrategia_de_Aprendizaje"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Strategy> <http://www.w3.org/2000/01/rdf-schema#label> "Learning_Strategy"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la modalidad de ense\u00F1anza de la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modalidad"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modality"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una meta que los estudiantes deben alcanzar al final de la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> <http://www.w3.org/2000/01/rdf-schema#label> "Objective"@en .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Objective> <http://www.w3.org/2000/01/rdf-schema#label> "Objetivo"@es .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la persona que imparte la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://linkeddata.ec/vsuc"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#label> "Profesor"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#label> "Professor"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/bibo/Document> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe a un medio de aprendizaje material que el profesor utiliza para impartir la asignatura."@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://linkeddata.ec/vsuc> .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Recurso"@es .
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Results> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity
+<http://ies.linkeddata.ec/syllabusOntology/vocabulary#Similarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/bibo/Document
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/aiiso/schema#Course> .
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Es una referencia hacia una obra literaria de la cual se haya obtenido parte del contenido de la asignatura."@es .
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/doco" .
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliograf\u00EDa"@es .
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliography"@en .
+# 
+# http://purl.org/spar/doco/Chapter
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/doco/Section> .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el nombre de una determinada secci\u00F3n del contenido."@es .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/doco" .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2000/01/rdf-schema#label> "Cap\u00EDtulo"@es .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/2000/01/rdf-schema#label> "Chapter"@en .
+# 
+# http://purl.org/spar/doco/Section
+<http://purl.org/spar/doco/Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Academic_Content> .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/2000/01/rdf-schema#comment> "Es una parte de un cap\u00EDtulo que se debe ense\u00F1ar a los estudiantes."@es .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/doco" .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/2000/01/rdf-schema#label> "Section"@en .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/2000/01/rdf-schema#label> "SubCap\u00EDtulo"@es .
+# 
+# http://purl.org/vocab/aiiso/schema#Center
+<http://purl.org/vocab/aiiso/schema#Center> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Center> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Center> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Center> <http://www.w3.org/2000/01/rdf-schema#comment> "A Center is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a center." .
+<http://purl.org/vocab/aiiso/schema#Center> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Center> <http://www.w3.org/2000/01/rdf-schema#label> "Center"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#College
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/aiiso/schema#Faculty> .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/aiiso/schema#Faculty> .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/aiiso/schema#School> .
+<http://purl.org/vocab/aiiso/schema#College> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de una instituci\u00F3n universitaria."@es .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2000/01/rdf-schema#comment> "A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college." .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#College> <http://www.w3.org/2000/01/rdf-schema#label> "College"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Course
+<http://purl.org/vocab/aiiso/schema#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Course> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Course> <http://www.w3.org/2000/01/rdf-schema#comment> "A Course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course." .
+<http://purl.org/vocab/aiiso/schema#Course> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Course"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Department
+<http://purl.org/vocab/aiiso/schema#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Department> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Department> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Department> <http://www.w3.org/2000/01/rdf-schema#comment> "A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department." .
+<http://purl.org/vocab/aiiso/schema#Department> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Department> <http://www.w3.org/2000/01/rdf-schema#label> "Department"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Division
+<http://purl.org/vocab/aiiso/schema#Division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Division> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Division> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Division> <http://www.w3.org/2000/01/rdf-schema#comment> "A Division is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a division." .
+<http://purl.org/vocab/aiiso/schema#Division> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Division> <http://www.w3.org/2000/01/rdf-schema#label> "Division"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Faculty
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#conformada> .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/aiiso/schema#School> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/aiiso/schema#part_of> .
+_:genid85 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/vocab/aiiso/schema#College> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/aiiso/schema#School> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de la facultad a la que pertenece una carrera."@es .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#comment> "A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty." .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#label> "Facultad"@es .
+<http://purl.org/vocab/aiiso/schema#Faculty> <http://www.w3.org/2000/01/rdf-schema#label> "Faculty"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Institute
+<http://purl.org/vocab/aiiso/schema#Institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Institute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Institute> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Institute> <http://www.w3.org/2000/01/rdf-schema#comment> "An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute." .
+<http://purl.org/vocab/aiiso/schema#Institute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Institute> <http://www.w3.org/2000/01/rdf-schema#label> "Institute"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#Institution
+<http://purl.org/vocab/aiiso/schema#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#Institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#Institution> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#Institution> <http://www.w3.org/2000/01/rdf-schema#comment> "An Institution is the upper most level of an academic institution." .
+<http://purl.org/vocab/aiiso/schema#Institution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Institution"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#KnowledgeGrouping
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe un conjunto de recursos acad\u00E9micos como una asignatura, contenidos, per\u00EDodo, objetivos, recursos, entre otros."@es .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#comment> "A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials. The more specific subclasses of Subject, Programme, Course and Module are preferred." .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#label> "KnowledgeGrouping"@en .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#label> "Knowledge_Grouping"@en .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#label> "Programa_de_Estudios"@es .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2000/01/rdf-schema#label> "Study_Program"@en .
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> <http://www.w3.org/2004/02/skos/core#historyNote> "" .
+# 
+# http://purl.org/vocab/aiiso/schema#ResearchGroup
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group." .
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Research Group"@en .
+# 
+# http://purl.org/vocab/aiiso/schema#School
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/aiiso/schema#part_of> .
+_:genid86 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid86 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/vocab/aiiso/schema#Faculty> .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/vocab/aiiso/schema#School> <http://purl.org/dc/terms/issued> "2008-05-14" .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de la carrera en la que se dicta la asignatura."@es .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#comment> "A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school. This class refers schools within a higher education institution such as 'Harvard Law School' it does not refer to schools involved in earlier education." .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/aiiso/schema#> .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#label> "Carrera"@es .
+<http://purl.org/vocab/aiiso/schema#School> <http://www.w3.org/2000/01/rdf-schema#label> "School"@en .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Refiere a una instituci\u00F3n educativo o editorial de libros"@es .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization." .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organizaci\u00F3n"@es .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Refiere a una persona que puede ser profesor, coordinador o autor de una obra literaria."@es .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person." .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/licenses/by/2.0/uk/
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/DerivativeWorks> .
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/Distribution> .
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://web.resource.org/cc/permits> <http://web.resource.org/cc/Reproduction> .
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://web.resource.org/cc/requires> <http://web.resource.org/cc/Attribution> .
+<http://creativecommons.org/licenses/by/2.0/uk/> <http://web.resource.org/cc/requires> <http://web.resource.org/cc/Notice> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<file:/home/ucuenca/CEPRA/NuestraONTO/schema-20080925.rdf> <http://web.resource.org/cc/license> <http://creativecommons.org/licenses/by/2.0/uk/> .
+# 
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe la fecha de publicaci\u00F3n de una obra literaria."@es .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "fecha_de_publicaci\u00F3n"@es .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "issued"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe the issue date of a bibliographic resource"@en .
+# 
+<http://purl.org/vocab/aiiso/schema-20080925.html> <http://purl.org/dc/elements/1.1/format> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "text/html" .
+_:genid87 <http://www.w3.org/2000/01/rdf-schema#label> "HTML"@en .
+# 
+<http://purl.org/vocab/aiiso/schema-20080925.rdf> <http://purl.org/dc/elements/1.1/format> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/rdf+xml" .
+_:genid88 <http://www.w3.org/2000/01/rdf-schema#label> "RDF"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid89 <http://www.w3.org/2002/07/owl#members> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Evaluation_Mode> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Indicator> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ies.linkeddata.ec/syllabusOntology/vocabulary#Learning_Achievement> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
